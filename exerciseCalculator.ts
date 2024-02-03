@@ -51,9 +51,4 @@ const calculateExcercises = (
   };
 };
 
-const exerciseArr = process.argv.slice(2);
-const arrString = exerciseArr[0].split("[").join("").split("]").join("");
-const exercisedHours = arrString.split(",").map(Number);
-const target = parseFloat(exerciseArr[1]);
-
-console.log(calculateExcercises(exercisedHours, target));
+module.exports = calculateExcercises;
