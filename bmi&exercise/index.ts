@@ -39,6 +39,7 @@ app.get("/exercises", (req, res) => {
   }
 
   const targetType = typeof target === "number";
+
   if (!targetType) {
     res.status(400).json({ error: "malformatted parameters" });
   }
